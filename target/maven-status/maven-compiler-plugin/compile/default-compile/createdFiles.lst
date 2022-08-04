@@ -1,0 +1,7 @@
+pageClasses\YourCartPage.class
+pageClasses\CheckoutOverviewPage.class
+jsonFilesParser\JSONManagement.class
+pageClasses\CheckoutCompletePage.class
+pageClasses\CheckoutInformationPage.class
+pageClasses\LoginPage.class
+pageClasses\PLPPage.class

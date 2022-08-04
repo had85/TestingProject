@@ -1,0 +1,4 @@
+{
+  "successLoginURL": "https://www.saucedemo.com/inventory.html",
+  "successCheckoutURL": "https://www.saucedemo.com/checkout-complete.html"
+}

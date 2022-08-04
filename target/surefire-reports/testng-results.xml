@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-09T15:00:52 CEST" name="Swag Labs Test All" finished-at="2022-07-09T15:01:16 CEST" duration-ms="23725">
+    <groups>
+    </groups>
+    <test started-at="2022-07-09T15:00:52 CEST" name="Log In Valid Credentials" finished-at="2022-07-09T15:01:03 CEST" duration-ms="11019">
+      <class name="swag.labs.test.ValidLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:swag.labs.test.ValidLogin@619713e5]" started-at="2022-07-09T15:00:52 CEST" name="setUp" finished-at="2022-07-09T15:01:02 CEST" duration-ms="10010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLogin()[pri:0, instance:swag.labs.test.ValidLogin@619713e5]" started-at="2022-07-09T15:01:02 CEST" name="validLogin" finished-at="2022-07-09T15:01:03 CEST" duration-ms="779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:swag.labs.test.ValidLogin@619713e5]" started-at="2022-07-09T15:01:03 CEST" name="endTest" finished-at="2022-07-09T15:01:03 CEST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- swag.labs.test.ValidLogin -->
+    </test> <!-- Log In Valid Credentials -->
+    <test started-at="2022-07-09T15:01:03 CEST" name="Log In Missing Username" finished-at="2022-07-09T15:01:06 CEST" duration-ms="3167">
+      <class name="swag.labs.test.EmptyUsernameFieldLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:swag.labs.test.EmptyUsernameFieldLogin@74e52303]" started-at="2022-07-09T15:01:03 CEST" name="setUp" finished-at="2022-07-09T15:01:06 CEST" duration-ms="2849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="emptyUsernameFieldLogin()[pri:0, instance:swag.labs.test.EmptyUsernameFieldLogin@74e52303]" started-at="2022-07-09T15:01:06 CEST" name="emptyUsernameFieldLogin" finished-at="2022-07-09T15:01:06 CEST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUsernameFieldLogin -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:swag.labs.test.EmptyUsernameFieldLogin@74e52303]" started-at="2022-07-09T15:01:06 CEST" name="endTest" finished-at="2022-07-09T15:01:06 CEST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- swag.labs.test.EmptyUsernameFieldLogin -->
+    </test> <!-- Log In Missing Username -->
+    <test started-at="2022-07-09T15:01:06 CEST" name="Log Out" finished-at="2022-07-09T15:01:09 CEST" duration-ms="2188">
+      <class name="swag.labs.test.Logout">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:swag.labs.test.Logout@323b36e0]" started-at="2022-07-09T15:01:06 CEST" name="setUp" finished-at="2022-07-09T15:01:08 CEST" duration-ms="1563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logout()[pri:0, instance:swag.labs.test.Logout@323b36e0]" started-at="2022-07-09T15:01:08 CEST" name="logout" finished-at="2022-07-09T15:01:09 CEST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:swag.labs.test.Logout@323b36e0]" started-at="2022-07-09T15:01:09 CEST" name="endTest" finished-at="2022-07-09T15:01:09 CEST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- swag.labs.test.Logout -->
+    </test> <!-- Log Out -->
+    <test started-at="2022-07-09T15:01:09 CEST" name="PLP Sorting" finished-at="2022-07-09T15:01:12 CEST" duration-ms="3222">
+      <class name="swag.labs.test.PLPSorting">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:swag.labs.test.PLPSorting@6356695f]" started-at="2022-07-09T15:01:09 CEST" name="setUp" finished-at="2022-07-09T15:01:10 CEST" duration-ms="1636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="sortingPLP()[pri:0, instance:swag.labs.test.PLPSorting@6356695f]" started-at="2022-07-09T15:01:10 CEST" name="sortingPLP" finished-at="2022-07-09T15:01:12 CEST" duration-ms="1470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortingPLP -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:swag.labs.test.PLPSorting@6356695f]" started-at="2022-07-09T15:01:12 CEST" name="endTest" finished-at="2022-07-09T15:01:12 CEST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- swag.labs.test.PLPSorting -->
+    </test> <!-- PLP Sorting -->
+    <test started-at="2022-07-09T15:01:12 CEST" name="Checkout" finished-at="2022-07-09T15:01:16 CEST" duration-ms="4113">
+      <class name="swag.labs.test.Checkout">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:swag.labs.test.Checkout@a514af7]" started-at="2022-07-09T15:01:12 CEST" name="setUp" finished-at="2022-07-09T15:01:15 CEST" duration-ms="3042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkout()[pri:0, instance:swag.labs.test.Checkout@a514af7]" started-at="2022-07-09T15:01:15 CEST" name="checkout" finished-at="2022-07-09T15:01:16 CEST" duration-ms="901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:swag.labs.test.Checkout@a514af7]" started-at="2022-07-09T15:01:16 CEST" name="endTest" finished-at="2022-07-09T15:01:16 CEST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- swag.labs.test.Checkout -->
+    </test> <!-- Checkout -->
+  </suite> <!-- Swag Labs Test All -->
+</testng-results>

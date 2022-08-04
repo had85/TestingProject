@@ -1,0 +1,6 @@
+swag\labs\test\Checkout.class
+swag\labs\test\EmptyUsernameFieldLogin.class
+swag\labs\test\ValidLogin.class
+swag\labs\test\Logout.class
+swag\labs\test\PLPSorting.class
+swag\labs\test\BaseTest.class

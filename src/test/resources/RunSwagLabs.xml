@@ -1,0 +1,31 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Swag Labs Test All" parallel="none">
+
+    <test name="Login">
+        <classes>
+            <class name="swag.labs.test.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Logout">
+        <classes>
+            <class name="swag.labs.test.LogoutTest"/>
+        </classes>
+    </test>
+
+    <test name="PLP Sorting">
+        <classes>
+            <class name="swag.labs.test.PLPSortingTest"/>
+        </classes>
+    </test>
+
+    <test name="Checkout">
+        <classes>
+            <class name="swag.labs.test.CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>
+
