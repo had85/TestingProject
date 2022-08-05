@@ -27,11 +27,11 @@ public class CheckoutTest extends BaseTest {
 									.loginUser(checkout.getUser().getUsername(), checkout.getUser().getPassword())
 									.addToCart(checkout.getItemsToBuy())
 									.goToCheckout()
-									.continueToCheckout(checkout.getUser().getFirstName(),
+									.fillInformationAndGoToCheckout(checkout.getUser().getFirstName(),
 											checkout.getUser().getLastName(), checkout.getUser().getPostalCode())
 									.finishCheckout()
 									.getCurrentUrl();
 		
-		assertEquals(successCheckoutURL, checkoutCompleteURL);
+		assertEquals(checkoutCompleteURL, successCheckoutURL);
 	}
 }

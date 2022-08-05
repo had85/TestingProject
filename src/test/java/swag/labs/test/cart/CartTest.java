@@ -1,6 +1,6 @@
 package swag.labs.test.cart;
 
-import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -29,6 +29,6 @@ public class CartTest extends BaseTest {
 												.addToCart(checkout.getItemsToBuy())
 												.getAllProducNamesInCart();
 		
-		assertTrue(checkout.getItemsToBuyNames().containsAll(productNamesInCart));
+		assertEquals(productNamesInCart, checkout.getItemsToBuyNames());
 	}
 }
