@@ -1,0 +1,38 @@
+[
+	{
+	  "user": {
+	      "username": "standard_user",
+		  "password": "secret_sauce",
+		  "firstName": "Mata",
+		  "lastName": "Komluski",
+		  "postalCode": "11000"
+	  },
+	  
+	  "itemsToBuy": [
+	  
+	  		{
+				 "id": "add-to-cart-sauce-labs-backpack",
+		 
+		 		 "name": "Sauce Labs Backpack"
+			}
+	  ]
+	},
+		{
+	  "user": {
+	      "username": "standard_user",
+		  "password": "secret_sauce",
+		  "firstName": "Samir",
+		  "lastName": "Hadrovic",
+		  "postalCode": "11250"
+	  },
+	  
+	  "itemsToBuy": [
+	  
+	  		{
+				 "id": "add-to-cart-sauce-labs-backpack",
+		 
+		 		 "name": "Sauce Labs Backpack"
+			}
+	  ]
+	}
+]

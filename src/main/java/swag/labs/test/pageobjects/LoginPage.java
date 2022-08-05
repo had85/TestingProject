@@ -1,10 +1,10 @@
-package pageClasses;
+package swag.labs.test.pageobjects;
 
-
-import jsonFilesParser.JSONManagement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import swag.labs.test.fileparsers.PropertyFileParser;
 
 import java.io.IOException;
 
@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
 
     public LoginPage(WebDriver driver, WebDriverWait wait) throws IOException {
         super(driver, wait);
-        String baseURL = JSONManagement.readProperty("baseURL");
+        String baseURL = PropertyFileParser.readPropety("/url-test-data/url.properties", "baseURL");
         driver.get(baseURL);
     }
     public PLPPage loginUser(String username, String password)  {
