@@ -26,8 +26,8 @@ public class CartDataProvider {
 				 .toArray(Object[][]::new);
 	}
 	
-	@DataProvider (name = "cart-test-params")
-	public static Object[][] cartTestParams (){
+	@DataProvider (name = "cart-items-to-add")
+	public static Object[][] cartItemsToAdd (){
 				
 		 Collection<Object> cartItemsList= readFromJsonFileAsCollection("/cart-test-data/cart-items.json", CartItems.class);
 		 		 

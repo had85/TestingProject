@@ -34,13 +34,13 @@ public class CartTest extends BaseTest {
 		loginPage = new LoginPage(driver, wait);
 	}
 	
-	@Test(dataProvider = "cart-test-params", dataProviderClass = CartDataProvider.class)
-	public void testAddToCart(CartItems cartItemsToBuy) throws IOException {
+	@Test(dataProvider = "cart-items-to-add", dataProviderClass = CartDataProvider.class)
+	public void testAddToCart(CartItems cartItemsToAdd) throws IOException {
 		Collection<String> productNamesInCart = loginPage
 												.loginUser(user.getUsername(), user.getPassword())
-												.addToCart(cartItemsToBuy.getCartItems())
+												.addToCart(cartItemsToAdd.getCartItems())
 												.getAllProducNamesInCart();
 		
-		assertEquals(productNamesInCart, cartItemsToBuy.getNamesOfCartItems());
+		assertEquals(productNamesInCart, cartItemsToAdd.getNamesOfCartItems());
 	}
 }
