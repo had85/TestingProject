@@ -17,7 +17,7 @@ public class CheckoutInformationPage extends BasePage {
         super(driver, wait);
     }
 
-    public CheckoutOverviewPage continueToCheckout(String firstName, String lastName, String postalCode) {
+    public CheckoutOverviewPage fillInformationAndGoToCheckout(String firstName, String lastName, String postalCode) {
         driver.findElement(firstNameField).sendKeys(firstName);
         driver.findElement(lastNameField).sendKeys(lastName);
         driver.findElement(postalCodeField).sendKeys(postalCode);

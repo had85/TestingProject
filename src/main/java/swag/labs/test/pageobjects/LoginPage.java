@@ -22,6 +22,7 @@ public class LoginPage extends BasePage {
         String baseURL = PropertyFileParser.readPropety("/url-test-data/url.properties", "baseURL");
         driver.get(baseURL);
     }
+    
     public PLPPage loginUser(String username, String password)  {
         driver.findElement(userNameField).sendKeys(username);
         driver.findElement(passwordField).sendKeys(password);

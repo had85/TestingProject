@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Collection;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
 import swag.labs.test.BaseTest;
@@ -16,6 +17,13 @@ import swag.labs.test.utils.dataproviders.CartDataProvider;
 public class CartTest extends BaseTest {
 
 	LoginPage loginPage;
+	
+	String successCheckoutURL;
+	
+	@Factory(dataProvider = "success-checkout-url", dataProviderClass = CartDataProvider.class)
+	public CartTest(String successCheckoutURL) {
+		this.successCheckoutURL = successCheckoutURL;
+	}
 
 	@BeforeMethod
 	public void setUp() throws IOException {
@@ -23,7 +31,7 @@ public class CartTest extends BaseTest {
 	}
 	
 	@Test(dataProvider = "cart-test-data", dataProviderClass = CartDataProvider.class)
-	public void testAddToCart(String successCheckoutURL, Checkout checkout) throws IOException {
+	public void testAddToCart(Checkout checkout) throws IOException {
 		Collection<String> productNamesInCart = loginPage
 												.loginUser(checkout.getUser().getUsername(), checkout.getUser().getPassword())
 												.addToCart(checkout.getItemsToBuy())
