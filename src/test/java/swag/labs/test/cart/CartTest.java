@@ -10,7 +10,8 @@ import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 
 import swag.labs.test.BaseTest;
-import swag.labs.test.domain.Checkout;
+import swag.labs.test.domain.CartItems;
+import swag.labs.test.domain.User;
 import swag.labs.test.pageobjects.LoginPage;
 import swag.labs.test.utils.dataproviders.CartDataProvider;
 
@@ -20,9 +21,12 @@ public class CartTest extends BaseTest {
 	
 	String successCheckoutURL;
 	
-	@Factory(dataProvider = "success-checkout-url", dataProviderClass = CartDataProvider.class)
-	public CartTest(String successCheckoutURL) {
+	User user;
+	
+	@Factory(dataProvider = "init-cart-test-data", dataProviderClass = CartDataProvider.class)
+	public CartTest(String successCheckoutURL, User user) {
 		this.successCheckoutURL = successCheckoutURL;
+		this.user = user;
 	}
 
 	@BeforeMethod
@@ -30,13 +34,13 @@ public class CartTest extends BaseTest {
 		loginPage = new LoginPage(driver, wait);
 	}
 	
-	@Test(dataProvider = "cart-test-data", dataProviderClass = CartDataProvider.class)
-	public void testAddToCart(Checkout checkout) throws IOException {
+	@Test(dataProvider = "cart-test-params", dataProviderClass = CartDataProvider.class)
+	public void testAddToCart(CartItems cartItemsToBuy) throws IOException {
 		Collection<String> productNamesInCart = loginPage
-												.loginUser(checkout.getUser().getUsername(), checkout.getUser().getPassword())
-												.addToCart(checkout.getItemsToBuy())
+												.loginUser(user.getUsername(), user.getPassword())
+												.addToCart(cartItemsToBuy.getCartItems())
 												.getAllProducNamesInCart();
 		
-		assertEquals(productNamesInCart, checkout.getItemsToBuyNames());
+		assertEquals(productNamesInCart, cartItemsToBuy.getNamesOfCartItems());
 	}
 }
